@@ -19,15 +19,18 @@
   </head>
   <body>
     <div class="container">
-    <h3>Hands on humanities hacking, from the <a href="https://timsherratt.org/digital-heritage-handbook/">Digital Heritage Handbook</a></h3>
-    <h4>Political speech</h4>
-      For the python exercise in <a href="http://timsherratt.org/digital-heritage-handbook/courses/Hands-on-humanities-hacking/">hands on
-      humanities hacking</a>:<pre><code>python tf-idf.py moad-election-speeches</code></pre>Install
-      <a href="https://www.continuum.io/downloads">Anaconda Python 2.7 version</a>. I also updated
+    <h3>Hands on humanities hacking, from the <a href="https://timsherratt.org/digital-heritage-handbook/">Tim Sherratt's Digital Heritage Handbook</a></h3>
+      For the <b>Political Speech</b> python exercise in
+      <a href="http://timsherratt.org/digital-heritage-handbook/courses/Hands-on-humanities-hacking/">hands on humanities hacking</a>
+      you won't be able to SSH into the server used in the workshop but if you're using macOS terminal the following tools worked.
+      Download <a href="https://www.continuum.io/downloads">Anaconda Python 2.7 version command-line installer</a>, which includes
+      lots of useful scientific python libraries. I also updated
       <a href="http://scikit-learn.org/stable/install.html">scikit-learn</a> using:
       <pre><code>conda update scikit-learn</code></pre>
-      Worked a treat. The result below shows the top twenty most significant three word phrases in each speech
-      by calculating their Term Frequency - Inverse Document Frequency (TF-IDF). The files analysed are
+      To run the script and save the output to file:
+      <pre><code>python tf-idf.py moad-election-speeches > results.txt</code></pre>
+      You should see the following results. They list the top twenty most significant three word phrases in each speech downloaded
+      earlier in the workshop by calculating their Term Frequency - Inverse Document Frequency (TF-IDF). The files analysed are
       Australian Federal election speeches from The Museum of Australian Democracy.
       <pre><code>
       1901-EDMUND-BARTON
