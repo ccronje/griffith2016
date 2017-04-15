@@ -19,19 +19,18 @@
   </head>
   <body>
     <div class="container">
-    <h3>Hands on humanities hacking, from the <a href="https://timsherratt.org/digital-heritage-handbook/">Tim Sherratt's Digital Heritage Handbook</a></h3>
+    <h3>Hands on humanities hacking, from <a href="https://timsherratt.org/digital-heritage-handbook/">Tim Sherratt's Digital Heritage Handbook</a></h3>
       For the <b>Political Speech</b> python exercise in
       <a href="http://timsherratt.org/digital-heritage-handbook/courses/Hands-on-humanities-hacking/">hands on humanities hacking</a>
-      you won't be able to SSH into the server used in the workshop but if you're using macOS terminal the following tools worked.
-      Download <a href="https://www.continuum.io/downloads">Anaconda Python 2.7 version command-line installer</a>, which includes
-      lots of useful scientific python libraries. I also updated
-      <a href="http://scikit-learn.org/stable/install.html">scikit-learn</a> using:
-      <pre><code>conda update scikit-learn</code></pre>
-      To run the script and save the output to file:
+      you won't be able to SSH into the server used in the workshop but if you're using macOS terminal the following tools worked for me.
+      Download <a href="https://www.continuum.io/downloads">Anaconda Python 2.7 version command-line installer</a> (which includes
+      lots of useful scientific python libraries). I also updated
+      <a href="http://scikit-learn.org/stable/install.html">scikit-learn</a> - see the instructions for Anaconda
+      'conda update scikit-learn. To run the script and save the output to a file:
       <pre><code>python tf-idf.py moad-election-speeches > results.txt</code></pre>
-      You should see the following results. They list the top twenty most significant three word phrases in each speech downloaded
+      You should see the following results - the top twenty most significant three word phrases in each speech downloaded
       earlier in the workshop by calculating their Term Frequency - Inverse Document Frequency (TF-IDF). The files analysed are
-      Australian Federal election speeches from The Museum of Australian Democracy.
+      Australian federal election speeches from The Museum of Australian Democracy.
       <pre><code>
       1901-EDMUND-BARTON
 
